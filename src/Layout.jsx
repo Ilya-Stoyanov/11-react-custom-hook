@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const Layout = ({posts, search, setSearch}) => {
   return (
     <div className='App'>
-      <Header title="React js Block"/>
+      <Header title="React Custom Hook"/>
       <Nav 
         search={search}
         setSearch={setSearch}

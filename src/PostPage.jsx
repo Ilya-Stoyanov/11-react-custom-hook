@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams, Link } from "react-router-dom"
 
-const PostPage = ({posts, hendleDelate}) => {
+const PostPage = ({posts, handleDelate}) => {
   const {id} = useParams()
 
   const post = posts.find(post => (post.id).toString() === id)
@@ -20,7 +20,10 @@ const PostPage = ({posts, hendleDelate}) => {
             <p className="postBoy">
               {post.body}
             </p>
-            <button onClick={() => hendleDelate(post.id)}>
+            <Link to={`/post/${post.id}/edit`}>
+              <button className="editBtn">Edit Post</button>
+            </Link>
+            <button onClick={() => handleDelate(post.id)} className='deleteBtn'>
               Delete Post
             </button>
           </>

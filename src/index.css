@@ -180,6 +180,21 @@ main {
     background-color: red;
     color: #fff;
     cursor: pointer;
+    transition: background-color .3s linear;
+}
+
+.postPage button:hover,
+.postPage button:focus{
+    opacity: 0.9;
+    transform: scale(0.98);
+}
+
+.deleteBtn{
+    margin-left: 5px;
+}
+
+.postPage .editBtn {
+    background-color: #333333;
 }
 
 /* new Post */
