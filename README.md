@@ -14,6 +14,13 @@ npm install
 ```bash
 npm start
 ```
+
+## Start server
+
+```bash
+npx json-server -p 3500 -w data/db.json 
+```
+
 ## We add  two Hooks useWindowSize and useFetchAxios
 
 ## First step we add new folder hooks and add file useWindowSize
