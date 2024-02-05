@@ -1,4 +1,4 @@
-# React - React hooks
+# React - React Custom Hooks
 
 
 ## React для начинающих
