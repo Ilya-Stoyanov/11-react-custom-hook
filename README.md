@@ -48,7 +48,7 @@ useEffect(() => {
   window.addEventListener("resize", handleResize) 
   // we need to stop addEventListener
   const cleanUp = () => {
-    window.addEventListener("resize", handleResize)
+    window.removeEventListener("resize", handleResize)
   }
 
   return cleanUp;
@@ -92,7 +92,7 @@ we need also look at package.json do you have "react-icons"?!
 - we add anonym function
 
 ```bash
-return return () => window.addEventListener("resize", handleResize)
+return return () => window.removeEventListener("resize", handleResize)
 
 ```
 ## Next step Add useFetchAxios Hook
